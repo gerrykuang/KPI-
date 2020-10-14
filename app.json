@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/hr/hr",
+    "pages/department/department",
+    "pages/general/general",
+    "pages/departscore/departscore",
+    "pages/generalscore/generalscore",
+    "pages/hrscore/hrscore",
+    "pages/totalscore/totalscore",
+    "pages/logs/logs"
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "KPI评分系统",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

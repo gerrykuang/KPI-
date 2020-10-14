@@ -1,0 +1,39 @@
+<view class="table">
+	<!-- 注意嵌套的数组对象 -->
+	<view class="table-tr">
+		<block>
+		  <view class="table-th">簡報順序</view>
+			<view class="table-th">名字</view>
+			<view class="table-th">部門</view>
+			<view class="table-th">製作打分</view>
+			<view class="table-th">內容打分</view>
+      <view class="table-th">KPI打分</view>
+			<view class="table-th">總分</view>
+		</block>
+	</view>
+	<block wx:for='{{threeArray}}' wx:key='*this' wx:for-item='oneArray'>
+		<view class="table-tr txt1" wx:if="{{index%2==0}}">
+			<block wx:for='{{oneArray}}' wx:key='id'>
+				<view class="table-td">{{item.rapporteur}}</view>
+				<view class="table-td">{{item.ename}}</view>
+        <view class="table-td">{{item.deptid}}</view>
+        <view class="table-td">{{item.makescore}}</view>
+        <view class="table-td">{{item.contentscore}}</view>
+        <view class="table-td">{{item.kpiscore}}</view>
+				<view class="table-td">{{item.total}}</view>
+			</block>
+		</view>
+		<view class="table-tr txt2" wx:else>
+				<block wx:for='{{oneArray}}' wx:key='id'>
+				<view class="table-td">{{item.rapporteur}}</view>
+				<view class="table-td">{{item.ename}}</view>
+        <view class="table-td">{{item.deptid}}</view>
+        <view class="table-td">{{item.makescore}}</view>
+        <view class="table-td">{{item.contentscore}}</view>
+        <view class="table-td">{{item.kpiscore}}</view>
+				<view class="table-td">{{item.total}}</view>
+			</block>
+		</view>
+
+	</block>
+</view>

@@ -1,0 +1,127 @@
+/* pages/login.wxss */
+page{ 
+  height: 100%; 
+ } 
+   
+ .container { 
+  height: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  padding: 0; 
+  box-sizing: border-box; 
+  background-color: #f2f2f2;
+
+ } 
+   
+ /*頁頂*/
+ .login-icon{ 
+  width: 100%;
+  background-color: #b0c4de;
+  height: 630px;
+ 
+ } 
+ .login-iii{
+   width: 100%;
+   background-color: #b0c4de;
+   height: 200px;
+   border-radius:  0px 0px 50% 50%;
+   position: relative;
+   margin-bottom: 20px;
+   box-shadow:0px 12px 8px -12px #000; 
+  
+ }
+.im{
+  display: block;
+  /* margin-left: 35px; */
+  margin-top: 15px;
+  margin-bottom: 40px;
+  width: 380px;
+  height: 71px;
+}
+.te1{
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+}
+.te2{
+  color: #fff;
+  text-align: center;
+  font-size: 23px;
+}
+
+
+ .login-img{ 
+  width: 750rpx; 
+ } 
+   
+ /*表单内容*/
+ .login-from { 
+  width: 80%;
+  margin-top: 50px; 
+  flex: auto; 
+  height:100%; 
+ } 
+   
+ .inputView { 
+  background-color: #fff; 
+  line-height: 44px; 
+  border-radius: 8px;
+  box-shadow: 0px 0px 1px 1px rgba(194, 189, 189, 0.932) inset;
+
+
+ } 
+ /*输入框*/
+ .nameImage, .keyImage { 
+  margin-left: 22px; 
+  width: 14px; 
+  height: 14px;
+ } 
+   
+ .loginLab { 
+  margin: 15px 15px 15px 10px; 
+  color: #545454; 
+  font-size: 14px
+ } 
+ .inputText { 
+  flex: block; 
+  float: right; 
+  text-align: left; 
+  margin-right: 45px; 
+  margin-top: 11px; 
+  font-size: 14px;
+  
+ } 
+   
+ .line { 
+  width: 100%; 
+  height: 2px; 
+  background-color: #f2f2f2; 
+  margin-top: 1px; 
+ } 
+ /*按钮*/
+ .loginBtnView { 
+   width: 100%;
+  height: auto; 
+  background-color: #f2f2f2; 
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+  padding-bottom: 0px; 
+  
+ } 
+   
+ .loginBtn { 
+    color: #fff;
+    font-size: 18px;
+    width: 300px; 
+    margin-top: 20px; 
+    margin-bottom: 12px;
+    /* background-color: #b0c4de; */
+    border:1px solid #706ecc;
+    box-shadow: 0 1px 2px #5387d6 inset,0 -1px 0 #404ecc inset,0 -2px 3px #4a59da inset;
+    background: -webkit-linear-gradient(top,#354fe2,#473be2);
+    background: -moz-linear-gradient(top,#475cd6,#3e61d4);
+    background: linear-gradient(top,#3f2edb,#373ab8);
+
+ }
+  

@@ -1,0 +1,75 @@
+<view class="container">
+	<view>
+		<view class="title">
+			<image class="im" src="../../images/login.png"></image>
+		</view>
+		<view class="login-iii"></view>
+	</view>
+
+	<view class="part1 ">
+		<view style="float: left;">
+			<view class="fl">
+				<view class="name1">簡報人：{{briefer}}</view>
+			</view>
+			<view class="fl">
+				<view class="name2">評分人：{{username}}</view>
+			</view>
+		</view>
+		<view class="total" type="number">
+			<text class="total1-1">{{total}}</text>
+		</view>
+	</view>
+
+	<view class="part2">
+		<view class='main_view1'>
+			<text class='befor1'></text>
+			<text class='reason_txt'>評分</text>
+			<text class='after1'></text>
+		</view>
+
+		<view class="sub">
+			<view class="sub3">KPI達成率：(15分)</view>
+			<input class="edit" type='number' id = 'gradetxt' maxlength='2' placeholder='請評分' bindinput='bindMoney' value="{{kpiNum}}" bindinput="kpiNumChange" required/>	
+		</view>
+		<view class="tishi">{{tishi1}}</view>
+		<view class="sub">
+			<view class="sub2">簡報製作：(30分)</view> 
+			<input class="edit" type='number' id = 'gradetxt' maxlength='2' placeholder='請評分' bindinput='bindMoney' value="{{makeNum}}" bindinput="makeNumChange" required/>
+		</view>
+		<view class="tishi">{{tishi2}}</view>
+		<view class="sub">
+			<view class="sub2">簡報內容：(30分)</view>
+			<input class="edit" type='number' id = 'gradetxt' maxlength='2' placeholder='請評分' bindinput='bindMoney' value="{{contentNum}}" bindinput="contentNumChange" required/>
+		</view>
+		<view class="tishi">{{tishi3}}</view>
+
+		<view class='main_view2'>
+			<text class='befor2'></text>
+			<text class='reason_txt'>評分參考標準</text>
+			<text class='after2'></text>
+		</view>
+
+		<view class="part2-1" bindtap='ellipsis'>
+			<view class='special'>
+				<view class="view_jianjie {{ellipsis?'ellipsis':'unellipsis'}}">
+						<text  class="text1" >評分參考標準:(每部門限1人評分)\n</text>
+						<text >1.KPI達成率(15分):廠處級主管根據實際情況評分；\n</text>
+						<text>2.簡報製作(30分):簡明扼要地表達KPI達成情況，圖文並茂，生動易懂，充分展示主題內容；\n</text>
+						<text>3.報告內容(30分):邏輯清楚，語言流暢，銜接緊密，良好的颱風展示；\n</text>
+						<text>4.時間掌控(10分):記時員統一登記時間；\n</text>
+						<text>5.本部門報告時，不評分。</text>
+				</view>
+				<view class='xiala_btn'>展開</view>
+			</view>
+		</view>
+		<view class="line"></view>
+		<view class="nav">
+			<view class="nav1" bindtap="viewScore">查看簡報者得分</view>
+			<!-- <view class="nav2"><navigator url="/pages/generalr">下载</navigator></view> -->
+		</view>
+	</view>
+
+	<view class="commitBtnView">
+		<button class="commitBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="commit">提交</button>
+	</view>
+</view>
